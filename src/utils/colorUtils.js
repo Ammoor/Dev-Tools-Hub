@@ -1,4 +1,3 @@
-// Generate a random hex color
 export function randomHexColor() {
   const hex = Math.floor(Math.random() * 0xffffff)
     .toString(16)
@@ -6,7 +5,6 @@ export function randomHexColor() {
   return `#${hex}`;
 }
 
-// Convert HEX to RGB
 export function hexToRgb(hex) {
   hex = hex.replace("#", "");
   const bigint = parseInt(hex, 16);
@@ -16,7 +14,6 @@ export function hexToRgb(hex) {
   return { r, g, b };
 }
 
-// Convert RGB to HSL
 export function rgbToHsl({ r, g, b }) {
   r /= 255;
   g /= 255;
@@ -27,7 +24,7 @@ export function rgbToHsl({ r, g, b }) {
   const l = (max + min) / 2;
 
   if (max === min) {
-    h = s = 0; // achromatic
+    h = s = 0; 
   } else {
     const d = max - min;
     s = l > 0.5 ? d / (2 - max - min) : d / (max + min);
@@ -52,7 +49,6 @@ export function rgbToHsl({ r, g, b }) {
   };
 }
 
-// Compute relative luminance for contrast (per WCAG)
 function luminanceChannel(c) {
   c /= 255;
   return c <= 0.03928 ? c / 12.92 : Math.pow((c + 0.055) / 1.055, 2.4);
@@ -74,10 +70,9 @@ export function getContrastRatio(foregroundHex, backgroundHex) {
   const lighter = Math.max(L1, L2);
   const darker = Math.min(L1, L2);
   const ratio = (lighter + 0.05) / (darker + 0.05);
-  return Math.round(ratio * 100) / 100; // two decimals
+  return Math.round(ratio * 100) / 100; 
 }
 
-// Determine best readable text color (black/white) on background
 export function bestTextColor(backgroundHex) {
   const whiteContrast = getContrastRatio("#ffffff", backgroundHex);
   const blackContrast = getContrastRatio("#000000", backgroundHex);

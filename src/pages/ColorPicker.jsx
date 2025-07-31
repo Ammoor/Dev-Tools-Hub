@@ -54,7 +54,6 @@ function ColorGenerator() {
     setCopied(text);
   };
 
-  // helper
   const copyToClipboard = async (text) => {
     try {
       await navigator.clipboard.writeText(text);

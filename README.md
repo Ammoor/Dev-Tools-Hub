@@ -1,3 +1,7 @@
+<div align="center">
+  <img src="./public/assets/images/1e2eddf7-a062-4d6f-8070-febae002c361.png" alt="Home Page" style="border-radius:10px; max-width:300px;" />
+</div>
+
 ## 1. Introduction
 
 **Dev Tools Hub** is a React-based web application (built with Vite and Bootstrap 5) that provides developers with a set of handy utilities. It demonstrates modern React practices—routing, hooks, context, custom hooks, lazy loading—and it's fully responsive with beautiful styling and interactions.
@@ -33,8 +37,8 @@ Ensure you have installed:
 1. **Clone the repository**
 
    ```bash
-   git clone <your-repo-url>
-   cd DevToolsHub
+   git clone <repo-url>
+   cd Dev-Tools-Hub
    ```
 
 2. **Install dependencies**
@@ -186,7 +190,7 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 
 ## Credits & Licensing
 
-Dev Tools Hub is built by [Your Name], 2025.
+Dev Tools Hub is built by Omar Ayman as ITI summer training React course, 2025.
 Feel free to reuse the code for your own learning or projects — a star ⭐ on GitHub is appreciated!
 
 ---
