@@ -1,0 +1,20 @@
+.hero {
+  min-height: 80vh;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: white;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+  padding: 40px 20px;
+}
+.card:hover {
+  transform: translateY(-5px);
+  transition: 0.3s ease;
+}
+.tools-section {
+  background-color: #f8f9fa;
+}
+.hover-shadow:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15) !important;
+}
+.transition {
+  transition: all 0.3s ease-in-out;
+}
